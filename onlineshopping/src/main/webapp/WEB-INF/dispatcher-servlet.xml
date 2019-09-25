@@ -11,6 +11,9 @@
     http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
     <context:component-scan base-package="com.sidhu.springboot.onlineshopping.controller" />
+     
+    <!--  To scan the Backend apps DAO package -->
+    <context:component-scan base-package="com.sidhu.springboot.shoppingbackend.daoimpl" />
     
     <bean id="viewResolver"
     class="org.springframework.web.servlet.view.InternalResourceViewResolver">

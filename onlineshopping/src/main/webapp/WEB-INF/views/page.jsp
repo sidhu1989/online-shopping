@@ -77,7 +77,7 @@
 		<div class="content">
 
 			<!--   Loads only when home or / or index is clicked -->
-			<c:if test="${userClickHome==true }">
+			<c:if test="${userClickHome==true}">
 				<%@ include file="home.jsp"%>
 			</c:if>
 
@@ -89,6 +89,11 @@
 			<!--  Loads Only when Contact button is clicked -->
 			<c:if test="${userClickContact==true }">
 				<%@ include file="contact.jsp"%>
+			</c:if>
+			
+			<!--  Loads Only when categories and products are clicked -->
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+				<%@ include file="listProducts.jsp"%>
 			</c:if>
 		</div>
 
